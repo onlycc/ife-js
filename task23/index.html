@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task23</title>
+    <style>
+        .root, .child_1, .child_2, .child_3 {
+            display: flex;
+            justify-content: space-between;
+
+            padding: 10px;
+            margin: 5px;
+
+            font-size: 10px;
+
+            border: 1px solid #000000;
+            background-color: #ffffff;
+        }
+        .root {
+            width: 1600px;
+            height: 300px;
+            border: 1px solid palevioletred;
+        }
+        .child_1 {
+            width: 620px;
+            height: 260px;
+        }
+        .child_2 {
+            width: 200px;
+            height: 220px;
+        }
+        .child_3 {
+            width: 40px;
+            height: 180px;
+        }
+
+        .btn {
+            width: 200px;
+            height: 60px;
+            margin-left: 40px;
+
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .bg-color {
+            background-color: palevioletred;
+        }
+        .found {
+            background-color: crimson;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="root">root
+        <div class="child_1">fruit
+            <div class="child_2">apple
+                <div class="child_3">pear</div>
+                <div class="child_3">ok</div>
+                <div class="child_3">city</div>
+            </div>
+            <div class="child_2">phone
+                <div class="child_3">not</div>
+            </div>
+            <div class="child_2">book
+                <div class="child_3">cool</div>
+                <div class="child_3">note</div>
+            </div>
+        </div>
+        <div class="child_1">human
+            <div class="child_2">baby
+                <div class="child_3">cute</div>
+                <div class="child_3">smart</div>
+                <div class="child_3">shy</div>
+            </div>
+            <div class="child_2">little
+                <div class="child_3">big
+                </div>
+                <div class="child_3">small</div>
+            </div>
+        </div>
+        <div class="child_1">maybe</div>
+    </div>
+
+    <button id="bfs" class="btn">多叉树-层次遍历</button>
+    <button id="dfs" class="btn">多叉树-深度遍历</button>
+
+
+    <label for="search">查询</label>
+    <input id="search" type="text" >
+
+
+
+<script src="task.js"></script>
+</body>
+</html>

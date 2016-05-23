@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task19</title>
+    <style>
+        .number-item {
+            margin: 2px;
+            width: 20px;
+            height: 20px;
+            font-size: 16px;
+            text-align: center;
+            color: white;
+            background-color: lightcoral;
+            flex: 1;
+        }
+        #wrapper {
+            width: 80%;
+            height: 400px;
+            margin-top: 30px;
+            border: 1px solid gainsboro;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-content: stretch;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="text" id="number_input">
+    <button id="left_in">左侧入</button>
+    <button id="right_in">右侧入</button>
+    <button id="left_out">左侧出</button>
+    <button id="right_out">右侧出</button>
+    <br><br>
+    <button id="bubble_sort">排序</button>
+
+    <div id="wrapper"></div>
+
+    <script src="task.js"></script>
+</body>
+</html>

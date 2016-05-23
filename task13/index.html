@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task13</title>
+</head>
+<body>
+    <label>请输入北京今天空气质量:<input id="aqi-input" type="text"></label>
+    <button id="button">确认填写</button>
+
+    <div>
+        您输入的值是:<span id="aqi-display">尚未录入</span>
+    </div>
+
+<script>
+    (function () {
+        /*
+         在注释下方写下代码
+         给按钮button绑定一个点击事件
+         在事件处理函数中
+         获取aqi-input输入的值，并显示在aqi-display中
+         */
+
+         var doc = document;
+
+         function displayDate() {
+            var num = parseInt( doc.getElementById('aqi-input').value );
+            console.log(num);
+            if( !isNaN(num) && num >= 0 && num <= 1000){
+                doc.getElementById('aqi-display').innerHTML = num;
+            } else {
+                alert(num+'不是0-1000内数字!');
+            }
+        }
+
+        doc.getElementById('button').onclick = function () {
+            displayDate();
+        };
+
+        doc.getElementById('aqi-input').onkeyup = function (event) {
+            if (event.keyCode === 13){
+                displayDate();
+            }
+        }
+
+    })();
+
+</script>
+</body>
+</html>

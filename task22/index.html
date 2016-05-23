@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task22</title>
+    <style>
+        .root, .child_1, .child_2, .child_3{
+            display: flex;
+            justify-content: space-between;
+
+            padding: 20px;
+            margin-bottom: 10px;
+
+            border: 1px solid #000000;
+            background-color: #ffffff;
+        }
+        .root {
+            width: 1000px;
+            height: 300px;
+        }
+        .child_1 {
+            width: 450px;
+            height: 260px;
+        }
+        .child_2 {
+            width: 180px;
+            height: 220px;
+        }
+        .child_3 {
+            width: 40px;
+            height: 180px;
+        }
+        .btn {
+            width: 80px;
+            height: 60px;
+            margin-left: 40px;
+
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .bg-color {
+            background-color: palevioletred;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="root">
+        <div class="child_1">
+            <div class="child_2">
+                <div class="child_3"></div>
+                <div class="child_3"></div>
+            </div>
+            <div class="child_2">
+                <div class="child_3"></div>
+                <div class="child_3"></div>
+            </div>
+        </div>
+        <div class="child_1">
+            <div class="child_2">
+                <div class="child_3"></div>
+                <div class="child_3"></div>
+            </div>
+            <div class="child_2">
+                <div class="child_3"></div>
+                <div class="child_3"></div>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn">先序</button>
+    <button class="btn">中序</button>
+    <button class="btn">后序</button>
+
+<script src="task.js"></script>
+</body>
+</html>
